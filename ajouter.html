@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une tâche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card shadow-lg p-4 animate-form">
+            <h2 class="text-center text-primary">Ajouter une tâche</h2>
+            <form id="taskForm">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titre</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="2" ></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="deadline" class="form-label">Date d'échéance</label>
+                    <input type="date" class="form-control" id="deadline" name="deadline" >
+                </div>
+                <div class="mb-3">
+                    <label for="priority" class="form-label">Priorité</label>
+                    <select class="form-select" id="priority" name="priority">
+                        <option value="Basse">🟢 Basse</option>
+                        <option value="Moyenne">🟠 Moyenne</option>
+                        <option value="Haute">🔴 Haute</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">Catégorie</label>
+                    <select class="form-select" id="category" name="category">
+                        <option value="Travail">💼 Travail</option>
+                        <option value="Personnel">🏡 Personnel</option>
+                        <option value="Urgent">⏳ Urgent</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="assignedTo" class="form-label">Assigné à</label>
+                    <input type="text" class="form-control" id="assignedTo" name="assignedTo" >
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success btn-lg shadow">✅ Ajouter</button>
+                    <a href="index.html" class="btn btn-secondary btn-lg shadow">↩ Retour</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ajouter.js" defer></script>
+</body>
+</html>
