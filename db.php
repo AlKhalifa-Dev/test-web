@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$user = "root";  // Modifier selon votre config
+$user = "root";  
 $pass = "";
 $dbname = "tasks_management";
 
